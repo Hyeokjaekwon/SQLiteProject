@@ -43,11 +43,12 @@ public class Main {
 			}
 			st1.close();
 			*/
+			
 			/*
 			System.out.println("\n*** 데이터 수정 ***");
 			Statement st2 = con.createStatement();
-			String sql2 = "update g_artists set a_year = '2000년대', '2010년대', '2020년' "
-					+ "where id = 1;";
+			String sql2 = "update g_artists set name = '동방신기' "
+					+ "where id = 8;";
 			int cnt2 = st2.executeUpdate(sql2);
 			if (cnt2 >0) {
 				System.out.println("데이터가 수정되었습니다!");
@@ -60,7 +61,7 @@ public class Main {
 			/*
 			System.out.println("\n*** Data Delete ***");
 			Statement st3 = con.createStatement();
-			String sql3 = "delete from g_artists where id = 4;";
+			String sql3 = "delete from g_artists where id = 8;"; 
 			int cnt3 = st3.executeUpdate(sql3);
 			if (cnt3 > 0) {
 				System.out.println("데이터가 삭제되었습니다.");
